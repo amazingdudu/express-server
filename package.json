@@ -1,0 +1,43 @@
+{
+    "name": "express-server",
+    "version": "1.0.0",
+    "description": "登录、注册、增删改查",
+    "keywords": [],
+    "homepage": "https://github.com/amazingdudu/express-server#readme",
+    "bugs": {
+        "url": "https://github.com/amazingdudu/express-server/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amazingdudu/express-server.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon ./bin/www",
+        "lint-fix": "npm run lint -- --fix",
+        "lint": "eslint --ext .js .",
+        "prettier": "prettier -c -w '**/*'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cookie-parser": "^1.4.5",
+        "debug": "^4.3.1",
+        "express": "^4.17.1",
+        "http-errors": "^1.8.0",
+        "mongoose": "^5.12.8",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.26.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.22.1",
+        "husky": "^6.0.0",
+        "prettier": "^2.3.0",
+        "prettier-plugin-packagejson": "^2.2.11",
+        "pretty-quick": "^3.1.0"
+    }
+}
