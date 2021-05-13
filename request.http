@@ -1,0 +1,36 @@
+### 变量
+@url = http://localhost:3000
+
+### 注册
+
+post {{url}}/user/register
+Content-Type: application/json
+
+{
+    "username":"user6",
+    "password":"1244",
+    "email":"839889500@qq.com",
+    "verificationCode": "5111"
+}
+
+### 发送邮箱验证码
+
+post {{url}}/user/sendEmailVerificationCode
+Content-Type: application/json
+
+{
+    "email":"839889500@qq.com"
+}
+
+### 登录
+
+post {{url}}/user/login
+Content-Type: application/json
+
+{
+    "username":"user1",
+    "password":"1244"
+}
+
+
+
