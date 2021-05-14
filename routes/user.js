@@ -85,8 +85,8 @@ router.post(
                     message: '邮箱已被使用'
                 });
             }
-
-            if (codes[email] !== verificationCode) {
+            
+            if (codes[email]?.code !== verificationCode) {
                 return res.send({
                     code: -1,
                     message: '验证码错误'
