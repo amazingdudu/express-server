@@ -7,10 +7,10 @@ post {{url}}/user/register
 Content-Type: application/json
 
 {
-    "username":"user6",
-    "password":"1244",
+    "username":"user1",
+    "password":"1234",
     "email":"839889500@qq.com",
-    "verificationCode": "5111"
+    "verificationCode": "8633"
 }
 
 ### 发送邮箱验证码
@@ -29,8 +29,46 @@ Content-Type: application/json
 
 {
     "username":"user1",
-    "password":"1244"
+    "password":"1234"
 }
 
 
+### 添加文章
+
+post {{url}}/article/add
+Content-Type: application/json
+
+{
+    "title":"嘻嘻",
+    "content":"哈哈哈哈哈哈哈哈哈"
+}
+
+### 删除文章
+
+post {{url}}/article/delete
+Content-Type: application/json
+
+{
+    "id": "609d155c285c328a1f0caa79"
+}
+
+### 编辑文章
+
+post {{url}}/article/update
+Content-Type: application/json
+
+{
+    "id": "609d15928d704d8a34745160",
+    "title":"呜呜呜dssdssddsdssd",
+    "content":"哈哈哈哈哈哈哈哈哈"
+}
+
+### 文章详情
+
+get {{url}}/article/detail?id=609d15928d704d8a34745160
+
+
+### 文章列表
+
+get {{url}}/article/list
 
