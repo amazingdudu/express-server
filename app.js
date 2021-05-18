@@ -8,6 +8,8 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const userRouter = require('./routes/user');
 const articleRouter = require('./routes/article');
+const fileRouter = require('./routes/file');
+
 require('./db/connect');
 
 const app = express();
@@ -22,6 +24,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use('/user', userRouter);
 app.use('/article', articleRouter);
+app.use('/file', fileRouter);
 
 app.use((req, res, next) => {
     // next(createError(404));
