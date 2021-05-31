@@ -11,6 +11,7 @@ const articleRouter = require('./routes/article');
 const fileRouter = require('./routes/file');
 
 require('./db/connect');
+require('dotenv').config();
 
 const app = express();
 
